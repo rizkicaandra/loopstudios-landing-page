@@ -16,7 +16,7 @@ const Header = () => {
 
   return (
     <>
-      <header className='relative min-h-162.5 w-full'>
+      <header className='relative min-h-162.5 w-full lg:flex lg:flex-col lg:items-center'>
         {/* bg image */}
         <div className='absolute inset-0 min-h-[400px] overflow-hidden'>
           <div className='h-full w-full transform bg-[url("/mobile/image-hero.jpg")] bg-cover bg-center bg-no-repeat md:bg-["/desktop/image-hero.jpg"] lg:bg-[url("/desktop/image-hero.jpg")] lg:bg-size-[100%_100%]'></div>
@@ -27,7 +27,7 @@ const Header = () => {
         <div className='absolute inset-0 bg-black/30 md:bg-black/40 lg:bg-black/50'></div>
 
         {/* logo and hamburger */}
-        <div className='fixed z-10 flex w-full items-center justify-between px-6 pt-10 md:px-20 lg:items-start lg:px-41.25 lg:pt-16'>
+        <div className='relative z-10 flex w-full items-center justify-between px-6 pt-10 md:px-20 lg:max-w-277.75 lg:items-start lg:px-0 lg:pt-16'>
           <Image
             src='/logo.svg'
             alt='logo'
@@ -67,7 +67,7 @@ const Header = () => {
         </div>
 
         {/* hero description */}
-        <div className='absolute inset-0 flex min-h-49 items-center justify-center px-6 md:px-20 lg:top-20 lg:justify-start lg:px-41.25'>
+        <div className='relative mt-40 flex min-h-49 items-center justify-start px-6 md:px-20 lg:mt-32 lg:w-full lg:max-w-277.75 lg:justify-start lg:px-0'>
           <h1 className='text-preset-3 md:text-preset-1 border-2 border-white p-6 text-white uppercase md:p-7 lg:max-w-162.5'>
             Immersive experiences that
             <br className='md:hidden' />
