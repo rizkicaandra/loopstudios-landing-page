@@ -1,26 +1,87 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@theme {
+  /* spacing */
+  --spacing-4.5: 1.125rem;
+  --spacign-41.25: 10.313rem;
+  --spacing-49: 12.25rem;
+  --spacing-69.75: 17.438rem;
+  --spacing-162.5: 40.625rem;
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  /* colors */
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-grey-200: #d8d8d8;
+  --color-blue-100: #e5eaf1;
+  --color-blue-50: #f6faff;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  /* text format */
+  --text-preset-1: 4.5rem;
+  --text-preset-1--line-height: 1;
+  --text-preset-1--letter-spacing: 0rem;
+  --text-preset-1--font-weight: 300;
+
+  --text-preset-2: 3rem;
+  --text-preset-2--line-height: 1;
+  --text-preset-2--letter-spacing: 0rem;
+  --text-preset-2--font-weight: 300;
+
+  --text-preset-3: 2.5rem;
+  --text-preset-3--line-height: 1;
+  --text-preset-3--letter-spacing: 0rem;
+  --text-preset-3--font-weight: 300;
+
+  --text-preset-4: 2rem;
+  --text-preset-4--line-height: 1;
+  --text-preset-4--letter-spacing: 0rem;
+  --text-preset-4--font-weight: 300;
+
+  --text-preset-5: 1.5rem;
+  --text-preset-5--line-height: 1;
+  --text-preset-5--letter-spacing: 0rem;
+  --text-preset-5--font-weight: 300;
+
+  --text-preset-6: 0.938rem;
+  --text-preset-6--line-height: 1;
+  --text-preset-6--letter-spacing: 0rem;
+  --text-preset-6--font-weight: 400;
+
+  --text-preset-7: 0.875rem;
+  --text-preset-7--line-height: 1;
+  --text-preset-7--letter-spacing: 0.313rem;
+  --text-preset-7--font-weight: 400;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Josefin Sans', 'Alata', sans-serif;
+}
+
+@keyframes slide-right {
+  0% {
+    transform: translateX(-25%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-left {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-25%);
+    opacity: 0;
+  }
+}
+
+.animate-slide-right {
+  animation: slide-right 0.5s ease-in-out forwards;
+}
+
+.animate-slide-left {
+  animation: slide-left 0.5s ease-in-out forwards;
 }
