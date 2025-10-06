@@ -29,7 +29,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub](https://github.com/rizkicaandra/loopstudios-landing-page)
-- Live Site URL: [Live Demo](https://magnificent-tartufo-976891.netlify.app/)
+- Live Site URL: [Live Demo](https://friendly-brigadeiros-e5a0ff.netlify.app/)
 
 ## My process
 
