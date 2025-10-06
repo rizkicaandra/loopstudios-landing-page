@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 const About = () => {
   return (
-    <div className='lg: mx-6 mt-24 flex flex-col items-center justify-center gap-12 md:mx-20 lg:relative lg:mx-auto lg:max-w-277.75 lg:flex-row'>
+    <div className='lg: mx-6 mt-24 flex flex-col items-center justify-center gap-12 md:mx-20 lg:relative lg:mx-auto lg:mt-40 lg:max-w-277.75 lg:flex-row'>
       {/* image about */}
       <div className='w-full'>
         <Image

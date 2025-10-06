@@ -61,7 +61,7 @@ const Portofolio = () => {
   ];
 
   return (
-    <div className='mt-24 flex flex-col items-center justify-center gap-8'>
+    <div className='mt-24 flex flex-col items-center justify-center gap-8 lg:mt-46'>
       {/* portofolio title */}
       <div className='mb-4 lg:mb-12 lg:flex lg:w-full lg:max-w-277.75 lg:items-center lg:justify-between'>
         <h3 className='text-preset-4 lg:text-preset-2 text-black'>
