@@ -2,9 +2,12 @@ import Image from 'next/image';
 
 const About = () => {
   return (
-    <div className='lg: mx-6 mt-24 flex flex-col items-center justify-center gap-12 md:mx-20 lg:relative lg:mx-auto lg:mt-40 lg:max-w-277.75 lg:flex-row'>
+    <section
+      className='lg: mx-6 mt-24 flex flex-col items-center justify-center gap-12 md:mx-20 lg:relative lg:mx-auto lg:mt-40 lg:max-w-277.75 lg:flex-row'
+      id='about'
+    >
       {/* image about */}
-      <div className='w-full'>
+      <div className='w-full' aria-label='about'>
         <Image
           src={'/mobile/image-interactive.jpg'}
           alt='about'
@@ -43,7 +46,7 @@ const About = () => {
           experiences that bind to their brand.
         </p>
       </div>
-    </div>
+    </section>
   );
 };
 

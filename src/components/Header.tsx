@@ -40,6 +40,7 @@ const Header = () => {
             type='button'
             onClick={handleNavigation}
             className='cursor-pointer hover:opacity-60 active:opacity-60 lg:hidden'
+            aria-label='Open menu'
           >
             <Image
               src='/icon-hamburger.svg'
@@ -50,7 +51,7 @@ const Header = () => {
             />
           </button>
 
-          <nav className='hidden lg:block'>
+          <nav className='hidden lg:block' aria-label='Primary navigation'>
             <ul className='text-preset-6 font-alata hidden items-start gap-10 text-white lg:flex'>
               {navbarItems.map((item, index) => (
                 <li key={index}>
