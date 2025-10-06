@@ -1,4 +1,5 @@
 import About from '@/components/About';
+import Footer from '@/components/Footer';
 import Header from '@/components/Header';
 import Portofolio from '@/components/Portofolio';
 
@@ -8,7 +9,7 @@ export default function Home() {
       <Header />
       <About />
       <Portofolio />
-      <div className='mt-24'></div>
+      <Footer />
     </>
   );
 }
